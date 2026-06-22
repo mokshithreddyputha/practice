@@ -4,14 +4,12 @@ struct Student{
     int id;
     char name[50];
     float marks[3];
-    float avg;git add .
-git commit -m "Rename practice.c to 1.1q.c"
-git push origin main
+    float avg;
 };
 int main(){
 
-    int N,i,j;
-    int topperIndex;
+    int N,i,j,m = 0;
+    int topperIndex = 0;
 
     scanf("%d",&N);
     
@@ -37,6 +35,15 @@ int main(){
                 printf("%d %s (Avg : %.2f)\n",s[j].id,s[j].name,s[j].avg);
             }
         }
+
+    for (int k=0;k<N;k++){
+        if(s[k].avg <= 75){
+            m++;
+        }
+    }
+    if(m == N){
+        printf("Empty\n");
+    }
 
         printf("Topper: %s\n",s[topperIndex].name);
 
