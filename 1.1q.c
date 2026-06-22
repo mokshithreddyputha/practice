@@ -4,7 +4,9 @@ struct Student{
     int id;
     char name[50];
     float marks[3];
-    float avg;
+    float avg;git add .
+git commit -m "Rename practice.c to 1.1q.c"
+git push origin main
 };
 int main(){
 
