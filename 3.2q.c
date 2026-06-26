@@ -11,29 +11,17 @@ int main(){
 
     int low = 0;
     int high = n-1;
-    
-    while(low < high){
-        int mid = (low+high)/2;
+    int mid = (low+high)/2;
+
+    while(low<high){
         if(arr[mid] < arr[mid+1]){
             low = mid+1;
-        }
-        else{
+        }else{
             high = mid;
         }
     }
 
-    printf("%d\n",low);
-
-
-
-
-
-
-
-
-
-
-
+printf("%d",low);
 
     return 0;
 }
